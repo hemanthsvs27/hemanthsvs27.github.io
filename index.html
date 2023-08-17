@@ -23,6 +23,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <script>
+    function openErrorMessage() {
+      alert("Contact functionality currently disabled, please reach out via Email, ID can be found on the sidebar.");
+    }
+  </script>
+
 </head>
 
 <body>
@@ -74,7 +81,7 @@
             <div class="contact-info">
               <p class="contact-title">Email</p>
 
-              <a href="mailto:hemanthsvs.222cs015@nitk.edu.in" class="contact-link">hemanth@example.com</a>
+              <a href="mailto:hemanthsvs.222cs015@nitk.edu.in" target="_blank" class="contact-link">hemanthsvs.222cs015@nitk.edu.in</a>
             </div>
 
           </li>
@@ -86,13 +93,27 @@
             </div>
 
             <div class="contact-info">
-              <p class="contact-title">Phone</p>
+              <p class="contact-title">LinkedIn</p>
 
-              <a href="tel:+9632397941" class="contact-link">+91 1234567890</a>
+              <a href="https://www.linkedin.com/in/hemanth-svs-516445190/" target="_blank" class="contact-link">Reach out via <br> LinkedIn <br> direct message here</a>
             </div>
 
           </li>
 
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="code-working"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">LeetCode</p>
+
+              <a href="https://leetcode.com/hemanthsvs27/" target="_blank" class="contact-link">Leetcode</a>
+            
+            </div>
+
+          </li>
           <li class="contact-item">
 
             <div class="icon-box">
@@ -115,7 +136,6 @@
 
             <div class="contact-info">
               <p class="contact-title">Location</p>
-
               <address>NITK Surathkal, Karnataka, India</address>
             </div>
 
@@ -636,8 +656,8 @@ Tools and technologies worked on:
             <li class="skills-item">
 
               <div class="title-wrapper">
-                <h5 class="h5">Microservices</h5>
-                <data value="80">80%</data>
+                <h5 style="color: #85c8f5;" class="h5">Microservices</h5>
+          
               </div>
 
               <div class="skill-progress-bg">
@@ -649,21 +669,7 @@ Tools and technologies worked on:
             <li class="skills-item">
 
               <div class="title-wrapper">
-                <h5 class="h5">Cloud</h5>
-                <data value="80">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Java & Java-SpringBoot</h5>
-                <data value="90">90%</data>
+                <h5 style="color: #85c8f5;"  class="h5">Cloud</h5>
               </div>
 
               <div class="skill-progress-bg">
@@ -675,12 +681,24 @@ Tools and technologies worked on:
             <li class="skills-item">
 
               <div class="title-wrapper">
-                <h5 class="h5">Containers, Container orchestration, Sidecar technologies, Distributed systems </h5>
-                <data value="50">50%</data>
+                <h5 style="color: #85c8f5;" class="h5">Java & Java-SpringBoot technologies</h5>
+                
               </div>
 
               <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 style="color: #85c8f5;" class="h5">Containers, Container orchestration</h5>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 60%;"></div>
               </div>
 
             </li>
@@ -914,7 +932,7 @@ Tools and technologies worked on:
 
             <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
 
-            <button class="form-btn" type="submit" disabled data-form-btn>
+            <button onclick="openErrorMessage()" class="form-btn" type="submit">
               <ion-icon name="paper-plane"></ion-icon>
               <span>Send Message</span>
             </button>
