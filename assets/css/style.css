@@ -68,18 +68,24 @@
   --light-gray: hsl(0, 0%, 84%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
   --bittersweet-shimmer: hsl(0, 43%, 51%); */
+
+
+  --eerie-black-2: #f5f5f5; /* card colour */
+  
+  --smoky-black: #1f262d; /* background */
+  --bittersweet-shimmer: #1f262d; /* also the orange */
+  
   --jet: hsl(0, 0%, 22%);
-  --onyx: #85c8f5;
   --eerie-black-1: hsl(240, 2%, 13%);
-  --eerie-black-2: #FCEDDA;
-  --smoky-black: #EE4E34;
   --white-1: hsl(240, 2%, 12%);
   --white-2: hsl(240, 2%, 12%);
-  --orange-yellow-crayola: #85c8f5;
-  --vegas-gold: #85c8f5;
-  --light-gray: #FFF;
   --light-gray-70: hsla(0, 0%, 7%, 0.7);
-  --bittersweet-shimmer: hsl(0, 43%, 51%);
+
+  --orange-yellow-crayola: #3498db;
+  --onyx: #3498db; /* blue text */ 
+  --vegas-gold: #3498db; /*blue text */
+  
+  --light-gray: #FFF; /* pure white */
 
   /**
    * typography
@@ -471,7 +477,7 @@ main {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: hsla(240, 1%, 17%, 0.75);
+  background: #212123;
   backdrop-filter: blur(10px);
   border: 1px solid var(--jet);
   border-radius: 12px 12px 0 0;
@@ -606,7 +612,7 @@ main {
 }
 
 .testimonials-item-title { margin-bottom: 7px;
-color:#85c8f5 }
+color:#3498db }
 
 .testimonials-text {
   /* color: var(--light-gray); */
@@ -1634,7 +1640,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .filter-item button:hover { color: var(--light-gray-70); }
 
-  .filter-item button.active { color: var(--orange-yellow-crayola); }
+  .filter-item button.active { color: #000; } 
 
   /* portfolio and blog grid */
 
