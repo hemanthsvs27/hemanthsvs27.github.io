@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Congratulations Saloni</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #FFA07A, #FF6B6B);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        #message {
+            font-family: 'Pacifico', cursive;
+            font-size: 3rem;
+            text-align: center;
+            color: #333; /* Dark grey color */
+            animation: colorChange 5s infinite, bounce 2s infinite, sizeChange 3s infinite, textTransition 2s;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        @keyframes colorChange {
+            0% { color: #333; }
+            25% { color: #555; } /* Slightly lighter grey color */
+            50% { color: #777; } /* Even lighter grey color */
+            75% { color: #999; } /* Light grey color */
+            100% { color: #333; }
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-200px);
+            }
+            60% {
+                transform: translateY(-100px);
+            }
+        }
+
+        @keyframes sizeChange {
+            0% { font-size: 3rem; }
+            25% { font-size: 3.5rem; } /* Increase font size */
+            50% { font-size: 4rem; } /* Increase font size */
+            75% { font-size: 3.5rem; } /* Decrease font size */
+            100% { font-size: 3rem; }
+        }
+
+        @keyframes textTransition {
+            0%, 100% {
+                transform: translateX(0);
+            }
+            25% {
+                transform: translateX(-200px); /* Move text left */
+            }
+            50% {
+                transform: translateX(200px); /* Move text right */
+            }
+            75% {
+                transform: translateX(-100px); /* Move text left */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="message">Congratulations Saloni!!</div>
+    <script>
+        // Add additional animations or interactivity with JavaScript here if needed.
+    </script>
+</body>
+</html>
